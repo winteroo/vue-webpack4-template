@@ -11,8 +11,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home{
-  font-size: 20px;
+.home {
   color: #fff;
+  font-size: 20px;
 }
 </style>

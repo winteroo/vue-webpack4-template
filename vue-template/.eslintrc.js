@@ -1,12 +1,17 @@
-// https://eslint.org/docs/user-guide/configuring
-
 module.exports = {
   root: true,
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
   env: {
-    browser: true
+    browser: true,
+    es6: true,
+    node: true
+  },
+  // 使用vue-eslint-parser解析vue文件
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    // 使用babel-eslint解析js文件以及vuescript标签内的内容
+    parser: 'babel-eslint',
+    ecmaVersion: 8,
+    sourceType: 'module'
   },
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention

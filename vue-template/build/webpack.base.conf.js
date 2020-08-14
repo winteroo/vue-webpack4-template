@@ -27,7 +27,7 @@ function processCss () {
 module.exports = {
   entry: {
     // 默认的输出文件名称，默认为main
-    app: './src/index.js'
+    app: ['core-js/stable', 'regenerator-runtime/runtime', './src/index.js']
   },
   output: {
     filename: '[name].[hash:8].js',

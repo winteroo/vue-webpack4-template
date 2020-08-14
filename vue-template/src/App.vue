@@ -36,21 +36,22 @@ export default {
 </script>
 <style lang="scss" scoped>
 .demo {
+  box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  text-align: center;
   padding-top: 30px;
-  box-sizing: border-box;
   font-size: 30px;
+  text-align: center;
 }
+
 button {
-  background-color: #108adf;
   padding: 10px;
-  line-height: 20px;
   color: #fff;
-  outline: none;
+  line-height: 20px;
+  background-color: #108adf;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
+  outline: none;
+  cursor: pointer;
 }
 </style>

@@ -9,6 +9,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const baseWebpackConfig = require('./webpack.base.conf');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 const colors = require('colors');
 const config = require('../config/dev.env');
 console.log(config);
@@ -52,6 +53,10 @@ module.exports = merge(baseWebpackConfig, {
           `Webpack Tutorial : ${colors.yellow('https://winteroo.github.io/ylblog/docs/webpack/')}`
         ]
       }
+    }),
+    new StylelintPlugin({
+      // 正则匹配想要lint监测的文件
+      files: ['**/*.s?(a|c)ss', '**/*.less', '**/*.vue']
     })
   ],
   devServer: {
