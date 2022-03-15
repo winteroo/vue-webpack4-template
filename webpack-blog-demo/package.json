@@ -63,7 +63,7 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4"
   }
